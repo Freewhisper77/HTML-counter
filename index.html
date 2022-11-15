@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Static Template</title>
+</head>
+<body>
+    <h1>原生 JS DEMO</h1>
+    <div id="dom-app">
+        <span id="count"> 0 </span>
+        <button id="addBtn" type="button" onclick="addBtnHandler()"> + </button>
+    </div>
+
+    <script type="text/javascript">
+        const $count = document.getElementById('count');
+        console.log($count.innerText);
+
+        function addBtnHandler() {
+            $count.innerText = Number($count.innerText) + 1;
+        }
+    </script>
+</body>
+</html>
